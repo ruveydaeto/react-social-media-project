@@ -1,8 +1,24 @@
 .rightbar {
   flex: 4;
+  background-color: #eff2f6;
+  padding: 20px;
 }
 .rightbarWrapper {
-  padding: 20px 20px 0 0 ;
+  padding: 20px 20px 10px 15px;
+  position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 0.4rem;
 }
 .birthdayImg {
   width: 40px;
@@ -65,11 +81,21 @@ margin-bottom: 15px;
 .rightbarTitle {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+
 }
 
-.rightbarInfo {
-  margin-bottom: 30px;
+.rightbarInf {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  gap: 2.5rem;
 }
 .rightbarInfoItem {
   margin-bottom: 10px;
@@ -98,4 +124,78 @@ margin-bottom: 15px;
 .rightbarFollowing {
   display: flex;
   flex-direction: column;
+}
+.rightbarAddArea {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(15, 111, 236, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewProfileButton {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8125rem;
+  border-radius: 0.2rem;
+  color: #0f6fec;
+  background-color: rgba(15, 111, 236, 0.1);
+  border: none;
+}
+.rightbarViews {
+  padding: 20px 20px 10px 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 0.4rem;
+}
+.cardHeader {
+  display: flex;
+    margin-top: 0;
+    margin-bottom: 1.0rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #14191e;
+    font-size: 24px;
+}
+.cardDescription {
+  font-size: 0.9375rem;
+  margin-bottom: 20px;
+}
+.date {
+  font-size: 0.875em;
+    color: #767171;
+}
+.rightbarWrapper {
+  margin-bottom: 20px;
+}
+.cardDescription {
+font-size: 23px;
+}
+.date {
+  font-size: 14px;
+}
+.spinner {
+  background-color: #75757b;
+  display: inline-block;
+  height: 4px;
+  margin: 2px;
+  border-radius: 50%;
+  width: 4px;
+}
+.spinner-dot {
+
+  margin-right: 0.5rem !important;
+}
+.cardDot {
+display: flex;
+font-size: 14px;
 }

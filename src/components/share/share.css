@@ -4,6 +4,7 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+  background-color: white;
 }
 .shareWrapper{
    padding: 10px;
@@ -60,8 +61,14 @@ align-items: center;
 .shareDividers {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 86px;
   cursor: pointer;
+  /* border-radius: 15%; */
+  border-radius: 0.4rem;
+  height: 30px;
+  background-color: #eef0f2;
 }
 .shareIcon {
   font-size: 18px;
@@ -75,9 +82,9 @@ align-items: center;
   border: none;
   padding: 7px;
   border-radius: 5px;
-  background-color: #2e81f4;
+  background-color: #26a421bf;
   font-weight: 500;
   margin-right: 20px;
   cursor: pointer;
-  color: rgb(84, 83, 83);
+  color: white;
 }

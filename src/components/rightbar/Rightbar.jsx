@@ -1,90 +1,49 @@
-import "./rightbar.css";
-import Online from "../online/Online";
-import {Users} from "../../dummyData";
-
-export default function RightBar({profile}) {
+import './rightbar.css';
+import Online from '../online/Online';
+import { Users } from '../../dummyData';
+import { Lasts } from '../../dummyData';
+import News from '../news/News';
+export default function RightBar({ profile, last }) {
   const HomeRightbar = () => {
     return (
       <>
-       <div className="birthdayContainer">
-          <img src="assets/gift.png" alt="" className="birthdayImg" />
-          <span className="birthdayText"> <b>mola</b> and  <b>5 other friends </b> have a birthday</span>
-        </div>
-        <img src="assets/ad.png" alt="" className="rightbarAd" />
-        <h4 className="rightbarTitle">Online Friends</h4>
-        <ul className=" rightbarFriendList"> 
-       {Users.map(u => (
-        <Online key={u.id} user={u}/>
-       ))}
-        
-         
-          
-            </ul>
+      <div className="rightbarFollowing">
+        <h4 className="rightbarTitle">Who to Follow</h4>
+        <ul className=" rightbarFriendList">
+          {Users.map((u) => (
+            <Online key={u.id} user={u} />
+          ))}
+        </ul>
+        <button  className="viewProfileButton">View More</button></div>
+     
       </>
-    )
+    );
   };
-  const ProfileRightbar = () => {
-    return(
-      <>
-      <h4 className="rightbarTitle">User Information</h4>
-      <div className="rightbarInfo">
-        <div className="rightbarInfoItem">
-          <span className="rightbarInfoKey">City:</span>
-          <span className="rightbarInfoValue">New York</span>
-        </div>
-        <div className="rightbarInfoItem">
-          <span className="rightbarInfoKey">From:</span>
-          <span className="rightbarInfoValue">Madrid</span>
-        </div>
-        <div className="rightbarInfoItem">
-          <span className="rightbarInfoKey">Relationship:</span>
-          <span className="rightbarInfoValue">Single</span>
-        </div>
-      </div>
-      <h4 className="rightbarTitle">User friends</h4>
-      <div className="rightbarFollowings">
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-        <div className="rightbarFollowing">
-          <img src="assets/person/1.jpeg" alt="" className="rightbarFollowingImg"/>
-          <span className="rightbarFollowingName">John Carter</span>
-        </div>
-      </div>
-      </>
 
-    )
-  }
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-{profile ? <ProfileRightbar/> : <HomeRightbar/>}
+        <HomeRightbar />
       </div>
+      <div className="rightbarViews">
+          <div className="viewsCard">
+            <div className="cardHeader">
+<h5>Todays News</h5>
+            </div>
+            <div className="hed">
+            {Lasts.map((m) => (
+            <News key={m.id} last={m} />
+          ))}</div>
+          <a className='cardDot'>
+    <div className="spinner-dot">
+      <span className='spinner'></span>
+      <span className='spinner'></span>
+      <span className='spinner'></span>
     </div>
-  )
+    View all latest news
+  </a>
+          </div>
+        </div>
+    </div>
+  );
 }

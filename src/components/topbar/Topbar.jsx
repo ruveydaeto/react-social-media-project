@@ -9,7 +9,7 @@ export default function Topbar() {
     <div className="topbarCenter">
       <div className="searchbar">
 <div className="searchIcon">
-      <i class='fa fa-search' ></i>
+      <i style={{color: ' #676a79', fontSize: '1.171875rem !important'}} class='fa fa-search' ></i>
       </div>
       <input placeholder="Search for friend, post or video" className="searchInput" />
       </div>
@@ -20,16 +20,16 @@ export default function Topbar() {
       
      <div className="topbarIcons">
       <div className="topbarIconItem">
-      <i class='fa fa-user'></i>
+      <i  style= {{color: '#676a79'}} class='fa fa-user'></i>
       <span className="topbarIconBadge">1</span>
       </div>
       <div className="topbarIconItem">
-      <i class='fa fa-comment'></i>
+      <i style= {{color: '#676a79'}} class='fa fa-comment'></i>
 
       <span className="topbarIconBadge">2</span>
       </div>
       <div className="topbarIconItem">
-      <i class='fa fa-bell'></i>
+      <i style= {{color: '#676a79'}} class='fa fa-bell'></i>
       <span className="topbarIconBadge">3</span>
       </div>
       </div> 

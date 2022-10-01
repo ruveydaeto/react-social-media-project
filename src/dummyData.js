@@ -2,28 +2,34 @@ export const Users = [
   {
     id: 1,
     profilePicture: "assets/person/1.jpeg",
-    username: "rüveyda"
+    username: "rüveyda",
+    desc: "Backend Developer"
   },
   {
     id:2,
     profilePicture: "assets/person/2.jpeg",
-    username: "janel"
+    username: "janel",
+    desc: "Frontend Developer"
   },
   {
     id:3,
     profilePicture: "assets/person/3.jpeg",
-    username: "susan"
+    username: "susan",
+    desc: "IOS Developer"
   },
   {
     id:4,
     profilePicture: "assets/person/4.jpeg",
-    username: "edi"
+    username: "edi",
+    desc: "Data Analyst"
   },
   {
     id:5,
     profilePicture: "assets/person/5.jpeg",
-    username: "sarah"
-  }
+    username: "sarah",
+    desc: "Frontend Developer"
+  },
+  
 ];
 
 export const Posts = [
@@ -73,3 +79,31 @@ export const Posts = [
     comment: 9,
   }
 ];
+
+export const Lasts = [
+  {
+    id: 1,
+    desc: "Ten questions you should answer truthfully",
+    date: "5 mins ago",
+  },
+  {
+    id: 2,
+    desc: "Best Pinterest Boards for learning about business",
+    date: "1 hours ago",
+  },
+  {
+    id: 3,
+    desc: "Ten questions you should answer truthfully",
+    date: "1 hours ago",
+  },
+  {
+    id: 4,
+    desc: "Ten questions you should answer truthfully",
+    date: "1 hours ago",
+  },
+  {
+    id: 5,
+    desc: "Ten questions you should answer truthfully",
+    date: "1 hours ago",
+  }
+]

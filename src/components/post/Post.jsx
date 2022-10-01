@@ -30,13 +30,14 @@ export default function Post({post}) {
     </div>
     <div className="postBottom">
       <div className="postBottomLeft">
-      <i style={{color: 'red'}} class="fa-solid fa-heart" onClick={likeHandler}></i> 
+      <img src="assets/heart.png" alt="" className="likeIcon" onClick={likeHandler} />
       <span className="postLikeCounter">{like} </span>
-      <i style={{color: 'rgb(84, 83, 83)'}} class="fa-regular fa-comment"></i>
+      <i style={{color: 'rgb(84, 83, 83)', marginRight: '5px'}} class="fa-regular fa-comment"></i>
+      <span className="postCommentText">{post.comment} </span>
       </div>
-      <div className="postBottomRight">
-      <span className="postCommentText">{post.comment} comments</span>
-      </div>
+      
+      
+    
     </div>
   </div>
 </div>

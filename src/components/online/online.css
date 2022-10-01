@@ -26,7 +26,18 @@
     right: 0;
     border: 2px solid white;
 }
-
+.rightbarInfo {
+  display: block;
+}
 .rightbarUsername{
     font-weight: 500;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+.rightbarDesc {
+  font-size: 0.875em;
+  color: #75757b;
+}
+.rightbarInfo {
+  margin: 0;
 }
