@@ -1,5 +1,15 @@
 .homeContainer {
-  display: flex;
+ display: flex;
+  max-width: 1140px;
   width: 100%;
-  
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.main {
+  background-color: #eff2f6;
+  padding-top: calc(0.5rem );
 }

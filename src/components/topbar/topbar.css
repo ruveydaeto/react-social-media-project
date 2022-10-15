@@ -1,12 +1,22 @@
 .topbarContainer {
-  height: 50px;
+display: flex;
+}
+.topbararea {
+  display: flex;
+  max-width: 1140px;
+  margin-right: auto;
   width: 100%;
-  background-color: #ffffff;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  background-color: white;
+
+}
+.topbarsearcharea {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0; 
-  z-index: 999;
 }
 .topbarLeft {
   flex: 3;
@@ -22,8 +32,11 @@
 
 }
 .topbarCenter {
-  flex: 5;
 
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
 }
 .topbarRight {
   flex: 4;
@@ -34,7 +47,7 @@
 }
 .searchbar {
   width: 100%;
-  height: 30px;
+
   background-color: #eef0f2;
   border-radius: 0.4rem;
   display: flex;
